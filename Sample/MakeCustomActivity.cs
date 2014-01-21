@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
 using Android.App;
+using Android.Graphics;
 using Android.OS;
 using Android.Util;
 using Android.Views.Animations;
@@ -87,12 +90,12 @@ namespace Sample
 
         private void SetValues()
         {
-            _progressBar.SetSmoothProgressDrawableSpeed(_speed);
-            _progressBar.SetSmoothProgressDrawableSectionsCount(_sectionsCount);
-            _progressBar.SetSmoothProgressDrawableSeparatorLength(DpToPx(_separatorLength));
-            _progressBar.SetSmoothProgressDrawableStrokeWidth(DpToPx(_strokeWidth));
-            _progressBar.SetSmoothProgressDrawableReversed(_checkBoxReversed.Checked);
-            _progressBar.SetSmoothProgressDrawableMirrorMode(_checkBoxMirror.Checked);
+            _progressBar.SmoothProgressDrawableSpeed = _speed;
+            _progressBar.SmoothProgressDrawableSectionsCount = _sectionsCount;
+            _progressBar.SmoothProgressDrawableSeparatorLength = DpToPx(_separatorLength);
+            _progressBar.SmoothProgressDrawableStrokeWidth = DpToPx(_strokeWidth);
+            _progressBar.SmoothProgressDrawableReversed = _checkBoxReversed.Checked;
+            _progressBar.SmoothProgressDrawableMirrorMode = _checkBoxMirror.Checked;
 
             IInterpolator interpolator;
             switch (_spinnerInterpolators.SelectedItemPosition)
@@ -111,8 +114,8 @@ namespace Sample
                     break;
             }
 
-            _progressBar.SetSmoothProgressDrawableInterpolator(interpolator);
-            _progressBar.SetSmoothProgressDrawableColors(Resources.GetIntArray(Resource.Array.colors));
+            _progressBar.SmoothProgressDrawableInterpolator = interpolator;
+            _progressBar.SmoothProgressDrawableColors = IntsToColors(Resources.GetIntArray(Resource.Array.colors));
         }
 
         private int DpToPx(int dp)
@@ -121,6 +124,11 @@ namespace Sample
             var px = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 
                     dp, r.DisplayMetrics);
             return px;
+        }
+
+        private static Color[] IntsToColors(IEnumerable<int> colors)
+        {
+            return colors.Select(x => new Color(x)).ToArray();
         }
     }
 }

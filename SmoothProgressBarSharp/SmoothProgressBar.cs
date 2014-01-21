@@ -130,58 +130,58 @@ namespace SmoothProgressBarSharp
             return (SmoothProgressDrawable) ret;
         }
 
-        public void SetSmoothProgressDrawableInterpolator(IInterpolator interpolator)
+        public IInterpolator SmoothProgressDrawableInterpolator
         {
-            CheckIndeterminateDrawable().Interpolator = interpolator;
+            get { return CheckIndeterminateDrawable().Interpolator; }
+            set { CheckIndeterminateDrawable().Interpolator = value; }
         }
 
-        public void SetSmoothProgressDrawableColors(int[] colors)
+        public Color[] SmoothProgressDrawableColors
         {
-            SetSmoothProgressDrawableColors(IntsToColors(colors));
+            get { return CheckIndeterminateDrawable().Colors; }
+            set { CheckIndeterminateDrawable().Colors = value; }
         }
 
-        public void SetSmoothProgressDrawableColors(Color[] colors)
+        public Color SmoothProgressDrawableColor
         {
-            CheckIndeterminateDrawable().Colors = colors;
+            get { return CheckIndeterminateDrawable().Color; }
+            set { CheckIndeterminateDrawable().Color = value; }
         }
 
-        public void SetSmoothProgressDrawableColor(Color color)
+        public float SmoothProgressDrawableSpeed
         {
-            CheckIndeterminateDrawable().Color = color;
-        }
-        public void SetSmoothProgressDrawableColor(int color)
-        {
-            SetSmoothProgressDrawableColor(new Color(color));
+            get { return CheckIndeterminateDrawable().Speed; }
+            set { CheckIndeterminateDrawable().Speed = value; }
         }
 
-        public void SetSmoothProgressDrawableSpeed(float speed)
+        public int SmoothProgressDrawableSectionsCount
         {
-            CheckIndeterminateDrawable().Speed = speed;
+            get { return CheckIndeterminateDrawable().SectionsCount; }
+            set { CheckIndeterminateDrawable().SectionsCount = value; }
         }
 
-        public void SetSmoothProgressDrawableSectionsCount(int sectionsCount)
+        public int SmoothProgressDrawableSeparatorLength
         {
-            CheckIndeterminateDrawable().SectionsCount = sectionsCount;
+            get { return CheckIndeterminateDrawable().SeperatorLength; }
+            set { CheckIndeterminateDrawable().SeperatorLength = value; }
         }
 
-        public void SetSmoothProgressDrawableSeparatorLength(int separatorLength)
+        public float SmoothProgressDrawableStrokeWidth
         {
-            CheckIndeterminateDrawable().SeperatorLength = separatorLength;
+            get { return CheckIndeterminateDrawable().StrokeWidth; }
+            set { CheckIndeterminateDrawable().StrokeWidth = value; }
         }
 
-        public void SetSmoothProgressDrawableStrokeWidth(float strokeWidth)
+        public bool SmoothProgressDrawableReversed
         {
-            CheckIndeterminateDrawable().StrokeWidth = strokeWidth;
+            get { return CheckIndeterminateDrawable().Reversed; }
+            set { CheckIndeterminateDrawable().Reversed = value; }
         }
 
-        public void SetSmoothProgressDrawableReversed(bool reversed)
+        public bool SmoothProgressDrawableMirrorMode
         {
-            CheckIndeterminateDrawable().Reversed = reversed;
-        }
-
-        public void SetSmoothProgressDrawableMirrorMode(bool mirrorMode)
-        {
-            CheckIndeterminateDrawable().MirrorMode = mirrorMode;
+            get { return CheckIndeterminateDrawable().MirrorMode; }
+            set { CheckIndeterminateDrawable().MirrorMode = value; }
         }
     }
 }
