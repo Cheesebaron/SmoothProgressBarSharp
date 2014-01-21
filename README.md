@@ -14,7 +14,7 @@ The original author made a nice [blog post] about that.
 
 ```xml
 <smoothprogressbarsharp.SmoothProgressBar
-	  xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:android="http://schemas.android.com/apk/res/android"
   	xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -33,15 +33,15 @@ The original author made a nice [blog post] about that.
 
 ```java
 _progressBar.IndeterminateDrawable = new SmoothProgressDrawable.Builder(context)
-    .color(0xff0000)
-    .interpolator(new DecelerateInterpolator())
-    .sectionsCount(4)
-    .separatorLength(8)     //You should use Resources#getDimensionPixelSize
-    .strokeWidth(8f)         //You should use Resources#getDimension
-    .speed(2.0)             //2 times faster
-    .reversed(false)
-    .mirrorMode(false)
-    .build();
+    .Color(0xff0000)
+    .Interpolator(new DecelerateInterpolator())
+    .SectionsCount(4)
+    .SeparatorLength(8)     //You should use Resources#getDimensionPixelSize
+    .StrokeWidth(8f)         //You should use Resources#getDimension
+    .Speed(2.0)             //2 times faster
+    .Reversed(false)
+    .MirrorMode(false)
+    .Build();
 ```
 
 You can also set many colors for one bar (see G+ app)
