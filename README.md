@@ -1,4 +1,4 @@
-> Note: Some Xamarin.Android versions have problems with only calling the (IntPtr javaReference, JniHandleOwnership transfer) constructor. 4.11.0 has been tested to work with this library.
+> Note: Some Xamarin.Android versions have problems with only calling the (IntPtr javaReference, JniHandleOwnership transfer) constructor. 4.11.0 has been tested to work with `SmoothProgressBar`. The `SmoothProgressDrawable` works on any version.
 
 ##Description
 
