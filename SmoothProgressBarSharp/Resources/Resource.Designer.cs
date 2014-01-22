@@ -33,17 +33,14 @@ namespace SmoothProgressBarSharp
 			// aapt resource value: 0x7f010001
 			public static int spb_color = 2130771969;
 			
-			// aapt resource value: 0x7f010009
-			public static int spb_colors = 2130771977;
-			
-			// aapt resource value: 0x7f010006
-			public static int spb_interpolator = 2130771974;
-			
 			// aapt resource value: 0x7f010008
-			public static int spb_mirror_mode = 2130771976;
+			public static int spb_colors = 2130771976;
 			
 			// aapt resource value: 0x7f010007
-			public static int spb_reversed = 2130771975;
+			public static int spb_mirror_mode = 2130771975;
+			
+			// aapt resource value: 0x7f010006
+			public static int spb_reversed = 2130771974;
 			
 			// aapt resource value: 0x7f010004
 			public static int spb_sections_count = 2130771972;
@@ -70,11 +67,11 @@ namespace SmoothProgressBarSharp
 		public partial class Boolean
 		{
 			
-			// aapt resource value: 0x7f070001
-			public static int spb_default_mirror_mode = 2131165185;
+			// aapt resource value: 0x7f060001
+			public static int spb_default_mirror_mode = 2131099649;
 			
-			// aapt resource value: 0x7f070000
-			public static int spb_default_reversed = 2131165184;
+			// aapt resource value: 0x7f060000
+			public static int spb_default_reversed = 2131099648;
 			
 			static Boolean()
 			{
@@ -89,8 +86,8 @@ namespace SmoothProgressBarSharp
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f030000
-			public static int spb_default_color = 2130903040;
+			// aapt resource value: 0x7f020000
+			public static int spb_default_color = 2130837504;
 			
 			static Color()
 			{
@@ -105,11 +102,11 @@ namespace SmoothProgressBarSharp
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f040000
-			public static int spb_default_stroke_separator_length = 2130968576;
+			// aapt resource value: 0x7f030000
+			public static int spb_default_stroke_separator_length = 2130903040;
 			
-			// aapt resource value: 0x7f040001
-			public static int spb_default_stroke_width = 2130968577;
+			// aapt resource value: 0x7f030001
+			public static int spb_default_stroke_width = 2130903041;
 			
 			static Dimension()
 			{
@@ -121,39 +118,11 @@ namespace SmoothProgressBarSharp
 			}
 		}
 		
-		public partial class Id
-		{
-			
-			// aapt resource value: 0x7f020000
-			public static int spb_interpolator_accelerate = 2130837504;
-			
-			// aapt resource value: 0x7f020002
-			public static int spb_interpolator_acceleratedecelerate = 2130837506;
-			
-			// aapt resource value: 0x7f020003
-			public static int spb_interpolator_decelerate = 2130837507;
-			
-			// aapt resource value: 0x7f020001
-			public static int spb_interpolator_linear = 2130837505;
-			
-			static Id()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Id()
-			{
-			}
-		}
-		
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f050001
-			public static int spb_default_interpolator = 2131034113;
-			
-			// aapt resource value: 0x7f050000
-			public static int spb_default_sections_count = 2131034112;
+			// aapt resource value: 0x7f040000
+			public static int spb_default_sections_count = 2130968576;
 			
 			static Integer()
 			{
@@ -165,11 +134,27 @@ namespace SmoothProgressBarSharp
 			}
 		}
 		
+		public partial class Interpolator
+		{
+			
+			// aapt resource value: 0x7f070000
+			public static int spb_default_interpolator = 2131165184;
+			
+			static Interpolator()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Interpolator()
+			{
+			}
+		}
+		
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060000
-			public static int spb_default_speed = 2131099648;
+			// aapt resource value: 0x7f050000
+			public static int spb_default_speed = 2131034112;
 			
 			static String()
 			{
@@ -204,6 +189,7 @@ namespace SmoothProgressBarSharp
 		{
 			
 			public static int[] SmoothProgressBar = new int[] {
+					16843073,
 					2130771968,
 					2130771969,
 					2130771970,
@@ -212,20 +198,19 @@ namespace SmoothProgressBarSharp
 					2130771973,
 					2130771974,
 					2130771975,
-					2130771976,
-					2130771977};
+					2130771976};
 			
 			// aapt resource value: 0
-			public static int SmoothProgressBar_spbStyle = 0;
+			public static int SmoothProgressBar_android_interpolator = 0;
 			
 			// aapt resource value: 1
-			public static int SmoothProgressBar_spb_color = 1;
+			public static int SmoothProgressBar_spbStyle = 1;
+			
+			// aapt resource value: 2
+			public static int SmoothProgressBar_spb_color = 2;
 			
 			// aapt resource value: 9
 			public static int SmoothProgressBar_spb_colors = 9;
-			
-			// aapt resource value: 6
-			public static int SmoothProgressBar_spb_interpolator = 6;
 			
 			// aapt resource value: 8
 			public static int SmoothProgressBar_spb_mirror_mode = 8;
@@ -233,17 +218,17 @@ namespace SmoothProgressBarSharp
 			// aapt resource value: 7
 			public static int SmoothProgressBar_spb_reversed = 7;
 			
-			// aapt resource value: 4
-			public static int SmoothProgressBar_spb_sections_count = 4;
-			
 			// aapt resource value: 5
-			public static int SmoothProgressBar_spb_speed = 5;
+			public static int SmoothProgressBar_spb_sections_count = 5;
+			
+			// aapt resource value: 6
+			public static int SmoothProgressBar_spb_speed = 6;
+			
+			// aapt resource value: 4
+			public static int SmoothProgressBar_spb_stroke_separator_length = 4;
 			
 			// aapt resource value: 3
-			public static int SmoothProgressBar_spb_stroke_separator_length = 3;
-			
-			// aapt resource value: 2
-			public static int SmoothProgressBar_spb_stroke_width = 2;
+			public static int SmoothProgressBar_spb_stroke_width = 3;
 			
 			static Styleable()
 			{

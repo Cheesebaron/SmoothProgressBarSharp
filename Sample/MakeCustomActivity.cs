@@ -10,7 +10,7 @@ using SmoothProgressBarSharp;
 
 namespace Sample
 {
-    [Activity(Label = "@string/app_name")]
+    [Activity(Label = "Custom")]
     public class MakeCustomActivity : Activity
     {
         private SmoothProgressBar _progressBar;
@@ -120,9 +120,8 @@ namespace Sample
 
         private int DpToPx(int dp)
         {
-            var r = Resources;
-            var px = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 
-                    dp, r.DisplayMetrics);
+            var px = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip,
+                    dp, Resources.DisplayMetrics);
             return px;
         }
 

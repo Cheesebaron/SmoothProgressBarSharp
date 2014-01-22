@@ -29,7 +29,6 @@ namespace Sample
 			global::SmoothProgressBarSharp.Resource.Attribute.spbStyle = global::Sample.Resource.Attribute.spbStyle;
 			global::SmoothProgressBarSharp.Resource.Attribute.spb_color = global::Sample.Resource.Attribute.spb_color;
 			global::SmoothProgressBarSharp.Resource.Attribute.spb_colors = global::Sample.Resource.Attribute.spb_colors;
-			global::SmoothProgressBarSharp.Resource.Attribute.spb_interpolator = global::Sample.Resource.Attribute.spb_interpolator;
 			global::SmoothProgressBarSharp.Resource.Attribute.spb_mirror_mode = global::Sample.Resource.Attribute.spb_mirror_mode;
 			global::SmoothProgressBarSharp.Resource.Attribute.spb_reversed = global::Sample.Resource.Attribute.spb_reversed;
 			global::SmoothProgressBarSharp.Resource.Attribute.spb_sections_count = global::Sample.Resource.Attribute.spb_sections_count;
@@ -41,20 +40,16 @@ namespace Sample
 			global::SmoothProgressBarSharp.Resource.Color.spb_default_color = global::Sample.Resource.Color.spb_default_color;
 			global::SmoothProgressBarSharp.Resource.Dimension.spb_default_stroke_separator_length = global::Sample.Resource.Dimension.spb_default_stroke_separator_length;
 			global::SmoothProgressBarSharp.Resource.Dimension.spb_default_stroke_width = global::Sample.Resource.Dimension.spb_default_stroke_width;
-			global::SmoothProgressBarSharp.Resource.Id.spb_interpolator_accelerate = global::Sample.Resource.Id.spb_interpolator_accelerate;
-			global::SmoothProgressBarSharp.Resource.Id.spb_interpolator_acceleratedecelerate = global::Sample.Resource.Id.spb_interpolator_acceleratedecelerate;
-			global::SmoothProgressBarSharp.Resource.Id.spb_interpolator_decelerate = global::Sample.Resource.Id.spb_interpolator_decelerate;
-			global::SmoothProgressBarSharp.Resource.Id.spb_interpolator_linear = global::Sample.Resource.Id.spb_interpolator_linear;
-			global::SmoothProgressBarSharp.Resource.Integer.spb_default_interpolator = global::Sample.Resource.Integer.spb_default_interpolator;
 			global::SmoothProgressBarSharp.Resource.Integer.spb_default_sections_count = global::Sample.Resource.Integer.spb_default_sections_count;
+			global::SmoothProgressBarSharp.Resource.Interpolator.spb_default_interpolator = global::Sample.Resource.Interpolator.spb_default_interpolator;
 			global::SmoothProgressBarSharp.Resource.String.spb_default_speed = global::Sample.Resource.String.spb_default_speed;
 			global::SmoothProgressBarSharp.Resource.Style.SmoothProgressBar = global::Sample.Resource.Style.SmoothProgressBar;
 			global::SmoothProgressBarSharp.Resource.Style.Theme_SmoothProgressBarDefaults = global::Sample.Resource.Style.Theme_SmoothProgressBarDefaults;
 			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar = global::Sample.Resource.Styleable.SmoothProgressBar;
+			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar_android_interpolator = global::Sample.Resource.Styleable.SmoothProgressBar_android_interpolator;
 			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar_spbStyle = global::Sample.Resource.Styleable.SmoothProgressBar_spbStyle;
 			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar_spb_color = global::Sample.Resource.Styleable.SmoothProgressBar_spb_color;
 			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar_spb_colors = global::Sample.Resource.Styleable.SmoothProgressBar_spb_colors;
-			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar_spb_interpolator = global::Sample.Resource.Styleable.SmoothProgressBar_spb_interpolator;
 			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar_spb_mirror_mode = global::Sample.Resource.Styleable.SmoothProgressBar_spb_mirror_mode;
 			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar_spb_reversed = global::Sample.Resource.Styleable.SmoothProgressBar_spb_reversed;
 			global::SmoothProgressBarSharp.Resource.Styleable.SmoothProgressBar_spb_sections_count = global::Sample.Resource.Styleable.SmoothProgressBar_spb_sections_count;
@@ -94,17 +89,14 @@ namespace Sample
 			// aapt resource value: 0x7f010001
 			public const int spb_color = 2130771969;
 			
-			// aapt resource value: 0x7f010009
-			public const int spb_colors = 2130771977;
-			
-			// aapt resource value: 0x7f010006
-			public const int spb_interpolator = 2130771974;
-			
 			// aapt resource value: 0x7f010008
-			public const int spb_mirror_mode = 2130771976;
+			public const int spb_colors = 2130771976;
 			
 			// aapt resource value: 0x7f010007
-			public const int spb_reversed = 2130771975;
+			public const int spb_mirror_mode = 2130771975;
+			
+			// aapt resource value: 0x7f010006
+			public const int spb_reversed = 2130771974;
 			
 			// aapt resource value: 0x7f010004
 			public const int spb_sections_count = 2130771972;
@@ -131,11 +123,11 @@ namespace Sample
 		public partial class Boolean
 		{
 			
-			// aapt resource value: 0x7f090001
-			public const int spb_default_mirror_mode = 2131296257;
+			// aapt resource value: 0x7f080001
+			public const int spb_default_mirror_mode = 2131230721;
 			
-			// aapt resource value: 0x7f090000
-			public const int spb_default_reversed = 2131296256;
+			// aapt resource value: 0x7f080000
+			public const int spb_default_reversed = 2131230720;
 			
 			static Boolean()
 			{
@@ -150,35 +142,35 @@ namespace Sample
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int gplus_color_1 = 2131034113;
+			// aapt resource value: 0x7f040001
+			public const int gplus_color_1 = 2130968577;
 			
-			// aapt resource value: 0x7f050002
-			public const int gplus_color_2 = 2131034114;
+			// aapt resource value: 0x7f040002
+			public const int gplus_color_2 = 2130968578;
 			
-			// aapt resource value: 0x7f050003
-			public const int gplus_color_3 = 2131034115;
+			// aapt resource value: 0x7f040003
+			public const int gplus_color_3 = 2130968579;
 			
-			// aapt resource value: 0x7f050004
-			public const int gplus_color_4 = 2131034116;
+			// aapt resource value: 0x7f040004
+			public const int gplus_color_4 = 2130968580;
 			
-			// aapt resource value: 0x7f050005
-			public const int holo_blue_dark = 2131034117;
+			// aapt resource value: 0x7f040005
+			public const int holo_blue_dark = 2130968581;
 			
-			// aapt resource value: 0x7f050007
-			public const int holo_green_dark = 2131034119;
+			// aapt resource value: 0x7f040007
+			public const int holo_green_dark = 2130968583;
 			
-			// aapt resource value: 0x7f050008
-			public const int holo_purple_dark = 2131034120;
+			// aapt resource value: 0x7f040008
+			public const int holo_purple_dark = 2130968584;
 			
-			// aapt resource value: 0x7f050009
-			public const int holo_red_dark = 2131034121;
+			// aapt resource value: 0x7f040009
+			public const int holo_red_dark = 2130968585;
 			
-			// aapt resource value: 0x7f050006
-			public const int holo_yellow_dark = 2131034118;
+			// aapt resource value: 0x7f040006
+			public const int holo_yellow_dark = 2130968582;
 			
-			// aapt resource value: 0x7f050000
-			public const int spb_default_color = 2131034112;
+			// aapt resource value: 0x7f040000
+			public const int spb_default_color = 2130968576;
 			
 			static Color()
 			{
@@ -193,11 +185,11 @@ namespace Sample
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int spb_default_stroke_separator_length = 2131099648;
+			// aapt resource value: 0x7f050000
+			public const int spb_default_stroke_separator_length = 2131034112;
 			
-			// aapt resource value: 0x7f060001
-			public const int spb_default_stroke_width = 2131099649;
+			// aapt resource value: 0x7f050001
+			public const int spb_default_stroke_width = 2131034113;
 			
 			static Dimension()
 			{
@@ -228,74 +220,62 @@ namespace Sample
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040010
-			public const int button = 2130968592;
+			// aapt resource value: 0x7f0c000c
+			public const int button = 2131492876;
 			
-			// aapt resource value: 0x7f040012
-			public const int button_make = 2130968594;
+			// aapt resource value: 0x7f0c000e
+			public const int button_make = 2131492878;
 			
-			// aapt resource value: 0x7f040006
-			public const int checkbox_mirror = 2130968582;
+			// aapt resource value: 0x7f0c0002
+			public const int checkbox_mirror = 2131492866;
 			
-			// aapt resource value: 0x7f040005
-			public const int checkbox_reversed = 2130968581;
+			// aapt resource value: 0x7f0c0001
+			public const int checkbox_reversed = 2131492865;
 			
-			// aapt resource value: 0x7f040011
-			public const int container = 2130968593;
+			// aapt resource value: 0x7f0c000d
+			public const int container = 2131492877;
 			
-			// aapt resource value: 0x7f040004
-			public const int progressbar = 2130968580;
+			// aapt resource value: 0x7f0c0000
+			public const int progressbar = 2131492864;
 			
-			// aapt resource value: 0x7f040013
-			public const int progressbar1 = 2130968595;
+			// aapt resource value: 0x7f0c000f
+			public const int progressbar1 = 2131492879;
 			
-			// aapt resource value: 0x7f040014
-			public const int progressbar2 = 2130968596;
+			// aapt resource value: 0x7f0c0010
+			public const int progressbar2 = 2131492880;
 			
-			// aapt resource value: 0x7f040015
-			public const int progressbar3 = 2130968597;
+			// aapt resource value: 0x7f0c0011
+			public const int progressbar3 = 2131492881;
 			
-			// aapt resource value: 0x7f040016
-			public const int progressbar4 = 2130968598;
+			// aapt resource value: 0x7f0c0012
+			public const int progressbar4 = 2131492882;
 			
-			// aapt resource value: 0x7f04000e
-			public const int seekbar_sections_count = 2130968590;
+			// aapt resource value: 0x7f0c000a
+			public const int seekbar_sections_count = 2131492874;
 			
-			// aapt resource value: 0x7f04000c
-			public const int seekbar_separator_length = 2130968588;
+			// aapt resource value: 0x7f0c0008
+			public const int seekbar_separator_length = 2131492872;
 			
-			// aapt resource value: 0x7f040008
-			public const int seekbar_speed = 2130968584;
+			// aapt resource value: 0x7f0c0004
+			public const int seekbar_speed = 2131492868;
 			
-			// aapt resource value: 0x7f04000a
-			public const int seekbar_stroke_width = 2130968586;
+			// aapt resource value: 0x7f0c0006
+			public const int seekbar_stroke_width = 2131492870;
 			
-			// aapt resource value: 0x7f040000
-			public const int spb_interpolator_accelerate = 2130968576;
+			// aapt resource value: 0x7f0c000b
+			public const int spinner_interpolator = 2131492875;
 			
-			// aapt resource value: 0x7f040002
-			public const int spb_interpolator_acceleratedecelerate = 2130968578;
+			// aapt resource value: 0x7f0c0009
+			public const int textview_sections_count = 2131492873;
 			
-			// aapt resource value: 0x7f040003
-			public const int spb_interpolator_decelerate = 2130968579;
+			// aapt resource value: 0x7f0c0007
+			public const int textview_separator_length = 2131492871;
 			
-			// aapt resource value: 0x7f040001
-			public const int spb_interpolator_linear = 2130968577;
+			// aapt resource value: 0x7f0c0003
+			public const int textview_speed = 2131492867;
 			
-			// aapt resource value: 0x7f04000f
-			public const int spinner_interpolator = 2130968591;
-			
-			// aapt resource value: 0x7f04000d
-			public const int textview_sections_count = 2130968589;
-			
-			// aapt resource value: 0x7f04000b
-			public const int textview_separator_length = 2130968587;
-			
-			// aapt resource value: 0x7f040007
-			public const int textview_speed = 2130968583;
-			
-			// aapt resource value: 0x7f040009
-			public const int textview_stroke_width = 2130968585;
+			// aapt resource value: 0x7f0c0005
+			public const int textview_stroke_width = 2131492869;
 			
 			static Id()
 			{
@@ -310,11 +290,8 @@ namespace Sample
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int spb_default_interpolator = 2131165185;
-			
-			// aapt resource value: 0x7f070000
-			public const int spb_default_sections_count = 2131165184;
+			// aapt resource value: 0x7f060000
+			public const int spb_default_sections_count = 2131099648;
 			
 			static Integer()
 			{
@@ -322,6 +299,22 @@ namespace Sample
 			}
 			
 			private Integer()
+			{
+			}
+		}
+		
+		public partial class Interpolator
+		{
+			
+			// aapt resource value: 0x7f090000
+			public const int spb_default_interpolator = 2131296256;
+			
+			static Interpolator()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Interpolator()
 			{
 			}
 		}
@@ -348,11 +341,11 @@ namespace Sample
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f080001
-			public const int app_name = 2131230721;
+			// aapt resource value: 0x7f070001
+			public const int app_name = 2131165185;
 			
-			// aapt resource value: 0x7f080000
-			public const int spb_default_speed = 2131230720;
+			// aapt resource value: 0x7f070000
+			public const int spb_default_speed = 2131165184;
 			
 			static String()
 			{
@@ -399,6 +392,7 @@ namespace Sample
 		{
 			
 			public static int[] SmoothProgressBar = new int[] {
+					16843073,
 					2130771968,
 					2130771969,
 					2130771970,
@@ -407,20 +401,19 @@ namespace Sample
 					2130771973,
 					2130771974,
 					2130771975,
-					2130771976,
-					2130771977};
+					2130771976};
 			
 			// aapt resource value: 0
-			public const int SmoothProgressBar_spbStyle = 0;
+			public const int SmoothProgressBar_android_interpolator = 0;
 			
 			// aapt resource value: 1
-			public const int SmoothProgressBar_spb_color = 1;
+			public const int SmoothProgressBar_spbStyle = 1;
+			
+			// aapt resource value: 2
+			public const int SmoothProgressBar_spb_color = 2;
 			
 			// aapt resource value: 9
 			public const int SmoothProgressBar_spb_colors = 9;
-			
-			// aapt resource value: 6
-			public const int SmoothProgressBar_spb_interpolator = 6;
 			
 			// aapt resource value: 8
 			public const int SmoothProgressBar_spb_mirror_mode = 8;
@@ -428,17 +421,17 @@ namespace Sample
 			// aapt resource value: 7
 			public const int SmoothProgressBar_spb_reversed = 7;
 			
-			// aapt resource value: 4
-			public const int SmoothProgressBar_spb_sections_count = 4;
-			
 			// aapt resource value: 5
-			public const int SmoothProgressBar_spb_speed = 5;
+			public const int SmoothProgressBar_spb_sections_count = 5;
+			
+			// aapt resource value: 6
+			public const int SmoothProgressBar_spb_speed = 6;
+			
+			// aapt resource value: 4
+			public const int SmoothProgressBar_spb_stroke_separator_length = 4;
 			
 			// aapt resource value: 3
-			public const int SmoothProgressBar_spb_stroke_separator_length = 3;
-			
-			// aapt resource value: 2
-			public const int SmoothProgressBar_spb_stroke_width = 2;
+			public const int SmoothProgressBar_spb_stroke_width = 3;
 			
 			static Styleable()
 			{
