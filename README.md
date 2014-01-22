@@ -1,3 +1,5 @@
+> Note: Some Xamarin.Android versions have problems with only calling the (IntPtr javaReference, JniHandleOwnership transfer) constructor. 4.11.0 has been tested to work with this library.
+
 ##Description
 
 This is a port of [the SmoothProgressBar library] for Android to Xamarin.Android.
