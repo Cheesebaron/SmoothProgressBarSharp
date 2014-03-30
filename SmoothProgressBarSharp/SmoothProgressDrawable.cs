@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using Android.Content;
 using Android.Graphics;
 using Android.Graphics.Drawables;
@@ -318,7 +319,7 @@ namespace SmoothProgressBarSharp
                 _sectionsCount = res.GetInteger(Resource.Integer.spb_default_sections_count);
 
                 _colors = new[]{res.GetColor(Resource.Color.spb_default_color)};
-                _speed = float.Parse(res.GetString(Resource.String.spb_default_speed));
+                _speed = float.Parse(res.GetString(Resource.String.spb_default_speed), CultureInfo.InvariantCulture);
                 _reversed = res.GetBoolean(Resource.Boolean.spb_default_reversed);
 
                 _strokeSeparatorLength = res.GetDimensionPixelSize(Resource.Dimension.spb_default_stroke_separator_length);
