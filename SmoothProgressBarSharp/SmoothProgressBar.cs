@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using Android.Content;
 using Android.Graphics;
@@ -43,7 +44,7 @@ namespace SmoothProgressBarSharp
             var strokeWidth = a.GetDimension(Resource.Styleable.SmoothProgressBar_spb_stroke_width,
                 res.GetDimension(Resource.Dimension.spb_default_stroke_width));
             var speed = a.GetFloat(Resource.Styleable.SmoothProgressBar_spb_speed,
-                float.Parse(res.GetString(Resource.String.spb_default_speed)));
+				float.Parse(res.GetString(Resource.String.spb_default_speed), CultureInfo.InvariantCulture));
             var reversed = a.GetBoolean(Resource.Styleable.SmoothProgressBar_spb_reversed,
                 res.GetBoolean(Resource.Boolean.spb_default_reversed));
             var mirrorMode = a.GetBoolean(Resource.Styleable.SmoothProgressBar_spb_mirror_mode,
